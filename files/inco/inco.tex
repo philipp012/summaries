@@ -108,9 +108,17 @@ Die Quantisierung ist der letzte verlustbehaftete Schritt im ganzen Kompressions
 		\caption{Quantisierung}
 		\label{fig:Quantisierung}
 \end{figure}
+\newpage
 \subsubsection{Entropy-Coding}
+Die Entropiecodierung dient dem effizienten speichern der quantifizierten Koeffizententabelle. Da oben rechts tendenziell höhere Werte sind und unten linke mehr 0 Werte, wird die Matrix in einem Zick-Zack-Muster durchlaufen und diese Tokens mithilfe eines RLE-Verfahrens gespeichert. Das RLE-Verfahren ist im JPEG-Algorithmus nicht genau vorgegeben.
+\begin{figure}[h]
+		\begin{center}
+		\includegraphics[width=5cm]{img/zigzag.png}
+		\end{center}
+		\caption{Zick-Zack durchlauf}
+		\label{fig:Zick-Zack durchlauf}
+\end{figure}
 \subsubsection{In Datei verpacken}
-\subsection{MPEG}
-
+Alle Werte die benötigt werden, um das Bild wieder herzustellen werden nun in eine .jpg Datei gespeichert. Das beinhaltet die komprimierte Koeffizentenmatrix sowie die genutzte Quantisierungstabelle und die entsprechenden Anhaltspunkte zum genutzten RLE-Verfahren.
 
 \end{document}
