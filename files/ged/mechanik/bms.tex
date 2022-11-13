@@ -1,0 +1,20 @@
+\section*{Bauteile}
+\subsection*{Widerstand}
+Reduziert die eingespeiste Spannung um einen konstanten Ohmwert \(\Omega\) und wandelt die überzählige Energie in Wärme um.
+\[U=RI\]
+\[R_{serie} = R_1 + ... + R_n\]
+\[R_{parallel} = \left(\frac{1}{R_1} + ... + \frac{1}{R_n}\right)^{-1}\]
+\subsection*{Diode}
+Besteht aus einem p-dotierten und n-dotierten Halbleiter die Stromfluss nur in eine Richtung zulassen. Siliziumhalbleiter benötigen min 0.7V um Strom hindurch fliessen zu lassen. Wenn eine zu hohe Spannung in das isolierende Ende gegeben wird, geht die Diode kaputt und leitet auch entgegen der vorgesehenen Richtung.
+\subsection*{Kondensator}
+Wird genutzt um Unregelmässigkeiten in einem Stromkreis auszugleichen. Kann eine konstante Kapazität \(C\) mit Einheit Farad speichern. Entladen und Laden verlaufen exponentiell. Die Zeitkonstante \(\tau\) beträgt \(e^{-1}\) vom Maximalwert von \(U_C\). 
+\[\tau=RC\]
+\[T=\frac{1}{f}\]
+\[T=\tau_{RC}=2\pi\sqrt{LC}\]
+\subsection*{Spule}
+Ein aufgewickeltes Stück Draht, dass unter Strom ein Magnetfeld erzeugt. Die Induktivität \(L\) mit Einheit Henry bestimmt die Trägheit der Spule. Wenn Strom durch eine Spule geleitet wird, fungiert sie zuerst als Widerstand, da Energie benötigt wird um das Magnetfeld aufzubauen. Wenn der Strom wieder abgestellt wird, drückt die freiwerdende Energie des zerfallenden Magnetfeldes im Muster eines exponentiellen Zerfalls weitere Elektronen durch die Spule. Wenn das Magnetfeld aufgebaut ist verfügt die Spule über einen sehr geringen Widerstand.
+\[\frac{dI(t)}{dt}=\frac{1}{L}(U_0-RI(t))\]
+\[T=2\pi\sqrt{LC}\]
+\[\tau = \frac{2L}{R}\]
+\subsection*{Transistor}
+Ein Transistor besteht aus zwei Dioden, die sich einen p-dotierten Halbleiter teilen. Dabei wird ein n-dotierter halbleiter an den Emitter und der andere and den Kollektor angehängt wird. Dabei verschiebt sich die Sperrschicht in Richtung des Kollektors. Der Basisinput (mittlerer Pin) wird an den p-dotierten Halbleiter angeschlossen. Wenn jetzt durch diese Basis einen Strom läuft, wird die Sperrschicht durchlässig und es wird ein Stromfluss vom Kollektor zum Emitter ermöglicht. So kann man mit einem kleinen Strom durch den Basispin einen grösseren Strom vom Kollektor freisetzen (Verstärkungsfunktion).

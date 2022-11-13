@@ -1,0 +1,58 @@
+\documentclass[10pt,landscape,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[nosf]{kpfonts}
+\usepackage[t1]{sourcesanspro}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage[top=1mm,bottom=1mm,left=1mm,right=1mm]{geometry}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{microtype}
+\usepackage{pdfpages}
+
+\let\bar\overline
+
+\include{inhalt/def}
+
+\begin{document}
+\small
+\begin{multicols*}{5}
+\section*{Analysis 1}
+\subsection*{Folgen}
+\subsubsection*{arithmetische Folgen}
+n-tes Glied
+\[
+		a_n = A + (n-1)\cdot d
+\]
+Partialsumme
+\[
+		s_n = n \cdot \frac{a_1 + a_{n+1}}{2} = n \cdot(A+ \frac{n-1}{2} \cdot d)
+\]
+Mittelwert
+\[
+		a_n = \frac{a_n + a_{n+1}}{2} 
+\]
+Unendliche Folge
+\[
+-\infty \lor \infty
+\]
+\subsubsection*{geometrische Folge}
+n-tes Glied
+\[
+a_n = A \cdot q^{n-1} = \frac{A}{q} \cdot q^{n}
+\]
+Partialsumme
+\[
+s_n = A \cdot \frac{1-q^{n}}{1-q} = A \cdot \frac{q^{n}-1}{q-1} 
+\]
+Mittelwert
+\[
+		|a_k| = \sqrt[]{a_{k-1}\cdot a_{k+1}}
+\]
+Unendliche Folge
+\[
+s_n = \frac{a_1}{1-q} 
+\]
+\end{multicols*}
+\end{document}
