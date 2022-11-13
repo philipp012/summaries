@@ -1,4 +1,31 @@
 * {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
+.content {
+    width: 70%;
+    background: #eee;
+    margin: 30px auto;
+    text-align:center;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 130px;
+}
+
+.fach {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+}
