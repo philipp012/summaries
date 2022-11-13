@@ -1,0 +1,182 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.10.25)  5 NOV 2022 17:16
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**ged.tex
+(./ged.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-04-10>
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip49
+\f@nch@O@elh=\skip50
+\f@nch@O@erh=\skip51
+\f@nch@O@olh=\skip52
+\f@nch@O@orh=\skip53
+\f@nch@O@elf=\skip54
+\f@nch@O@erf=\skip55
+\f@nch@O@olf=\skip56
+\f@nch@O@orf=\skip57
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
+(/usr/share/texmf-dist/tex/latex/bbold/bbold.sty
+Package: bbold 1994/04/06 Bbold symbol package
+)
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count193
+\l__pdf_internal_box=\box50
+) (./ged.aux)
+\openout1 = `ged.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count194
+\scratchdimen=\dimen141
+\scratchbox=\box51
+\nofMPsegments=\count195
+\nofMParguments=\count196
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count197
+\MPscratchDim=\dimen142
+\MPnumerator=\count198
+\makeMPintoPDFobject=\count199
+\everyMPtoPDFconversion=\toks18
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 20.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 20.
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+[]\OT1/cmr/m/n/10 Die Stromst^^?arke beschreibt die Ab-
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 24--25
+\OT1/cmr/m/n/10 stossungskraft der Elek-tro-nen, die ex-po-
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 24--25
+\OT1/cmr/m/n/10 nen-tiell zur N^^?ahe zu an-deren Elek-tro-nen
+ []
+
+
+Overfull \hbox (1.25282pt too wide) in paragraph at lines 20--31
+ [] 
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+] [2]
+Overfull \hbox (2.47275pt too wide) in paragraph at lines 63--64
+\OT1/cmr/m/n/10 und wer-den durch Ladun-gen oder durch zeitlich ver^^?anderlich
+e mag-netis-che Felder
+ []
+
+<img/magnetField.png, id=17, 898.35625pt x 662.475pt>
+File: img/magnetField.png Graphic file (type png)
+<use img/magnetField.png>
+Package pdftex.def Info: img/magnetField.png  used on input line 68.
+(pdftex.def)             Requested size: 199.16928pt x 146.86699pt.
+
+Overfull \hbox (20.53761pt too wide) in paragraph at lines 75--77
+\OT1/cmr/m/n/10 berechnet wer-den. Diese Kraft $\OML/cmm/m/it/10 F[]$ \OT1/cmr/
+m/n/10 heisst Lorentzkraft. Die Rich-tung der Lorentzkraft
+ []
+
+
+Overfull \hbox (11.88942pt too wide) in paragraph at lines 78--78
+[]\OT1/cmr/m/n/10 Die gesamte elek-tro-ma-gen-tis-che Kraft welche auf eine be-
+wegte Ladung ausge^^?ubt
+ []
+
+[3 <./img/magnetField.png>] [4] (./ged.aux) ) 
+Here is how much of TeX's memory you used:
+ 1502 strings out of 478238
+ 24347 string characters out of 5850455
+ 321591 words of memory out of 5000000
+ 19775 multiletter control sequences out of 15000+600000
+ 470777 words of font info for 33 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,12n,62p,748b,297s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y7.pfb>
+Output written on ged.pdf (4 pages, 137450 bytes).
+PDF statistics:
+ 58 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+

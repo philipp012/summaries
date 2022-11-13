@@ -1,0 +1,237 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.10.25)  13 NOV 2022 12:01
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**inco.tex
+(./inco.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-04-10>
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip49
+\f@nch@O@elh=\skip50
+\f@nch@O@erh=\skip51
+\f@nch@O@olh=\skip52
+\f@nch@O@orh=\skip53
+\f@nch@O@elf=\skip54
+\f@nch@O@erf=\skip55
+\f@nch@O@olf=\skip56
+\f@nch@O@orf=\skip57
+)
+(/usr/share/texmf-dist/tex/latex/mwe/mwe.sty
+Package: mwe 2018/03/30 v0.5 Package to support minimal working examples (MWE)
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
+(/usr/share/texmf-dist/tex/latex/lipsum/lipsum.sty
+(/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-04-10 L3 programming layer (loader) 
+
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count193
+\l__pdf_internal_box=\box50
+))
+Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count194
+\l__lipsum_a_int=\count195
+\l__lipsum_b_int=\count196
+
+(/usr/share/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
+(/usr/share/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+(/usr/share/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count197
+\c@Blindtext=\count198
+\c@blind@countparstart=\count199
+\blind@countxx=\count266
+\blindtext@numBlindtext=\count267
+\blind@countyy=\count268
+\c@blindlist=\count269
+\c@blindlistlevel=\count270
+\c@blindlist@level=\count271
+\blind@listitem=\count272
+\c@blind@listcount=\count273
+\c@blind@levelcount=\count274
+\blind@mathformula=\count275
+\blind@Mathformula=\count276
+\c@blind@randomcount=\count277
+\c@blind@randommax=\count278
+\c@blind@pangramcount=\count279
+\c@blind@pangrammax=\count280
+)) (./inco.aux)
+\openout1 = `inco.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count281
+\scratchdimen=\dimen141
+\scratchbox=\box51
+\nofMPsegments=\count282
+\nofMParguments=\count283
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count284
+\MPscratchDim=\dimen142
+\MPnumerator=\count285
+\makeMPintoPDFobject=\count286
+\everyMPtoPDFconversion=\toks18
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+<img/logikgatter.png, id=1, 1371.1225pt x 870.25125pt>
+File: img/logikgatter.png Graphic file (type png)
+<use img/logikgatter.png>
+Package pdftex.def Info: img/logikgatter.png  used on input line 17.
+(pdftex.def)             Requested size: 345.0pt x 218.96985pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 28.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+ <./img/logikgatter.png>]
+Overfull \hbox (1.25519pt too wide) in paragraph at lines 53--54
+\OT1/cmr/m/n/10 go-rith-mus, welcher sich zur kom-prim-ierung nat^^?urlicher Bi
+lder eignet. Der JPEG-
+ []
+
+[2]
+<img/cbcr.png, id=19, 953.5625pt x 875.27pt>
+File: img/cbcr.png Graphic file (type png)
+<use img/cbcr.png>
+Package pdftex.def Info: img/cbcr.png  used on input line 59.
+(pdftex.def)             Requested size: 199.16928pt x 182.81046pt.
+<img/downsampling.png, id=20, 824.07875pt x 287.0725pt>
+File: img/downsampling.png Graphic file (type png)
+<use img/downsampling.png>
+Package pdftex.def Info: img/downsampling.png  used on input line 68.
+(pdftex.def)             Requested size: 345.0pt x 120.18414pt.
+
+Overfull \hbox (10.05617pt too wide) in paragraph at lines 65--73
+\OT1/cmr/m/n/10 Unter dem Chromi-nanz Down-sam-pling ver-steht man das Zusam-me
+n-fassen mehrere
+ []
+
+[3 <./img/cbcr.png>]
+Overfull \hbox (16.32481pt too wide) in paragraph at lines 74--75
+\OT1/cmr/m/n/10 abzus-pe-ich-ern. Daf^^?ur wird das jeder In-for-ma-tion-skanal
+ in 8x8 Pix-elbl^^?ocke aufgeteilt,
+ []
+
+[4 <./img/downsampling.png>]
+<img/8x8_array.png, id=27, 691.58376pt x 332.24126pt>
+File: img/8x8_array.png Graphic file (type png)
+<use img/8x8_array.png>
+Package pdftex.def Info: img/8x8_array.png  used on input line 84.
+(pdftex.def)             Requested size: 139.7231pt x 67.12132pt.
+<img/dct_result.png, id=28, 566.115pt x 305.14pt>
+File: img/dct_result.png Graphic file (type png)
+<use img/dct_result.png>
+Package pdftex.def Info: img/dct_result.png  used on input line 89.
+(pdftex.def)             Requested size: 139.7231pt x 75.31169pt.
+<img/dct.png, id=29, 829.0975pt x 834.11626pt>
+File: img/dct.png Graphic file (type png)
+<use img/dct.png>
+Package pdftex.def Info: img/dct.png  used on input line 98.
+(pdftex.def)             Requested size: 184.9429pt x 186.05165pt.
+ [5 <./img/8x8_array.png> <./img/dct_result.png> <./img/dct.png>]
+<img/quantisierung.png, id=33, 812.03375pt x 480.79625pt>
+File: img/quantisierung.png Graphic file (type png)
+<use img/quantisierung.png>
+Package pdftex.def Info: img/quantisierung.png  used on input line 107.
+(pdftex.def)             Requested size: 345.0pt x 204.26599pt.
+ [6 <./img/quantisierung.png>] (./inco.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2191 strings out of 478238
+ 39797 string characters out of 5850455
+ 420236 words of memory out of 5000000
+ 20436 multiletter control sequences out of 15000+600000
+ 470777 words of font info for 33 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 87i,12n,91p,869b,285s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb>
+Output written on inco.pdf (6 pages, 1300372 bytes).
+PDF statistics:
+ 75 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+

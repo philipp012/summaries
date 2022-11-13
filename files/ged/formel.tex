@@ -1,0 +1,74 @@
+\documentclass[a4paper]{article}
+\usepackage{blindtext}
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  left=5mm,
+  top=5mm}
+\author{Philipp Kiss}
+\begin{document}
+\pagenumbering{gobble}
+\section*{Elektrizität}
+\begin{table}[h!]
+		\begin{center}
+				\begin{tabular}{|c|c|p{14.7cm}|}
+						\hline
+						\textbf{Abkürzung} & \textbf{Einheit} & \textbf{Beschreibung} \\
+						\hline
+						I & Ampère (A)& Die Stromstärke beschreibt den Stromfluss als Anzahl Elektronen pro Sekunde\\
+						\hline
+						U & Volt (V) & Die Spannung beschreibt den Druck, der durch die Abstossungskraft der Elektronen verursacht wird\\
+						\hline
+						R & Ohm (\(\Omega\)) & Der Widerstand beschreibt, wie stark ein Bauteil den Stromfluss behindert. \\
+						\hline
+						\(\rho\) & Ohm (\(\Omega\)) & Beschreibt den Widerstand eines spezifischen Materials\\
+						\hline
+						P&Watt (W) & Die Leistung die etwas braucht/generiert. \\
+						\hline
+						C&Farad (F)&Beschreibt die Kapazität die ein Kondensator speichern kann. \\
+						\hline
+						T&Sekunden (s)& Die Zeitkonstante beschreibt einen Schritt der Ladungsdauer eines Kondensators. \\
+						\hline
+						L&Henry (H) & Die Trägheit einer Spule. \\
+						\hline
+				\end{tabular}
+		\end{center}
+\end{table}
+
+\subsection*{Kirchhoff}
+\subsubsection*{Knotensatz} \(
+		I_{ein} = I_{aus}
+\)
+\subsubsection*{Maschensatz} \(
+U_0 = U_1 + ... + U_n
+\)
+\subsection*{Bauteile}
+\subsubsection*{Widerstand}
+\(
+U=RI
+\)
+\subsubsection*{Kabelwiderstand}
+\(
+R= \rho \frac{l}{A} 
+\)
+\subsubsection*{Wirkungsgrad}
+\(
+		n = \frac{P_{output}}{P_{input}} 
+\)
+\subsubsection*{Kondensator}
+\(
+		\tau = e^{-1}
+\)
+\newline
+\(
+C= \frac{\tau}{R} 
+\)
+\newline 
+\(
+T = 2\pi \ \sqrt[]{LC}
+\)
+\subsubsection*{Spule}
+\(
+L= \frac{R \tau}{2} 
+\)
+\end{document}
