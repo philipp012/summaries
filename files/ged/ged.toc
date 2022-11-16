@@ -1,0 +1,13 @@
+\babel@toc {german}{}\relax 
+\contentsline {section}{\numberline {1}Einheiten}{2}{}%
+\contentsline {section}{\numberline {2}Ohm'sches Gesetz}{2}{}%
+\contentsline {section}{\numberline {3}Elektrische Bauelemente}{2}{}%
+\contentsline {subsection}{\numberline {3.1}Spannungsquelle}{2}{}%
+\contentsline {subsection}{\numberline {3.2}Leiter}{2}{}%
+\contentsline {subsection}{\numberline {3.3}Widerstand}{3}{}%
+\contentsline {subsection}{\numberline {3.4}Diode}{3}{}%
+\contentsline {subsection}{\numberline {3.5}Kondensator}{3}{}%
+\contentsline {subsection}{\numberline {3.6}Spule}{3}{}%
+\contentsline {section}{\numberline {4}Elektrodynamik}{4}{}%
+\contentsline {subsection}{\numberline {4.1}elektrische Felder}{4}{}%
+\contentsline {subsection}{\numberline {4.2}magnetische Felder}{4}{}%
