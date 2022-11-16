@@ -13,6 +13,7 @@
 \begin{document}
 \pagenumbering{gobble}
 
+\section{test}
 \section{Aussagen und Prädikate}
 \paragraph{Aussagen} müssen einen distinkten Wahrheitswert haben.
 Z.b. \textit{Heute ist es über 10°C}. Ein ambiger Term wie \(x+3=5\) ist keine Aussage, da der Wahrheitswert abhängig ist.
@@ -131,7 +132,9 @@ Die Negation muss stur wörtlich verstanden werden. Z.b. \textit{Nur ein Element
 		\exists_x \in P A(x) \wedge \forall_{y,z} \in P (A(y) \wedge A(z) \Rightarrow y=z)
 \]
 \paragraph{Kommutativität}
-$$\exists_x \forall_y F(x,y) \Leftrightarrow \forall_y \exists_x F(x,y)$$
+
+\paragraph{Distributivität}
+\newpage
 
 \section{Beweistechniken}
 \subsection{Implikation}
@@ -268,9 +271,8 @@ $$a\sim b \Rightarrow b \sim a$$
 \subsubsection{Äquivalenzklassen}
 Eine Äquivalenzklasse ist eine Menge von Elementen, die gleich sind. Das heisst, dass eine Menge von Elementen so viele Äquivalenzklassen hat, wie sie distinkte Elemente hat. Dabei gilt, dass eine Äquivalenzklasse eine nicht-leere Teilmenge der Ausgangsmengeist, wobei mehrere Äquivalenzklassen paarweise-disjunkt sind und die Vereinigung aller Äquivalenzklassen die Ausgangsmenge ergibt.
 \subsection{Ordnungsrelation}
-Unter Ordnungsrelationen fasst man alle Arten von Relationen zusammen, mithilfe derer man Objekte in gewisser Weise vergleichen und mehr oder weniger eindeutig sortieren kann. Dabei sind zwei Werte unvergleichbar, falls weder $xRy$ noch $yRx$ gilt. Minimal nennt man ein Objekt $x$, falls für kein anderes Objekt $y$ gilt: $yRx$. Maximal nennt man ein Objekt $x$, falls für kein anderes Objekt $y$ gilt $xRy$.
-Mathematisch kann eine Ordnung wie folgt dargestellt werden 
-$$a \prec b \prec c$$ wobei $\prec$ besagt, dass ein Element einem anderen Element untergeordnet ist.
+Unter Ordnungsrelationen fasst man alle Arten von Relationen zusammen, mithilfe derer man Objekte in gewisser Weise vergleichen und mehr oder weniger eindeutig sortieren kann. Dabei sind zwei Werte unvergleichbar, falls weder $xRy$ noch $yRx$ gilt. Minimal nennt man ein Objekt $x$, falls für kein anderes Objekt $y$ gilt: $yRx$.
+Maximal nennt man ein Objekt $x$, falls für kein anderes Objekt $y$ gilt $xRy$.
 \subsubsection{Präordnung}
 Relation ist reflexiv und transitiv
 \subsubsection{Halbordnung}
@@ -279,16 +281,17 @@ Präordnung und es besteht eine Antisymmetrie.
 Halbordnung und alle Elemente der Menge $M$ können verglichen werden.
 \subsubsection{Wohlordnung}
 Totalordnung und jede nicht-leere Teilmenge der Menge $M$ enthält ein R-minimales Element.
+\newpage
+\section{Rekursive Strukturen}
+Rekursive Strukturen berufen sich auf die folgenden Peano-Axiome:
+\begin{itemize}
+		\item Die Zahl 0 ist eine natürliche Zahl. Jede natürliche Zahl $k$ hat genau einen Nachfolger $k+1$. Der Nachfolger jeder natürlichen Zahl ist wiederum eine natürliche Zahl.
+		\item Die Zahl 0 ist die einzige natürliche Zahl, die kein Nachfolger ist.
+		\item Jede natürliche Zahl ist Nachfolger von höchstens einer natürlichen Zahl.
+\end{itemize}
 
-\subsection{Hasse-Diagramm}
-Ein Hassediagramm ermöglicht eine graphische Darstellung einer zyklenfreien Halbordnung, bei der die Minimal- und Maximalwerte sowie paarweise unvergleichbare Elemente einfach ersichtlich sind. Ein Hasse-Diagramm ist auch für eine zyklenfreie Totalordnung möglich, mach aber wenig Sinn, da alle Elemente in einer eindeutigen Reihenfolge miteinander verkettet sind.
-\begin{figure}[h]
-		\begin{center}
-		\includegraphics[width=5cm]{img/hasse.png}
-		\end{center}
-		\caption{Hasse-Diagramm einer unbekannten Relation R auf eine Menge $[0,8]$}
-		\label{fig:}
-\end{figure}
+\subsection{Vollständige Induktion}
+
 
 \section{Unendlichkeiten}
 Eine undenlich grosse Menge ist eine Menge, die endlos viele Elemente enthält. Allerdings ist das rechnen mit solchen Mengen kompliziert, das z.b. \(| \mathbb{N}| = |2 \mathbb{N}|\) wahr ist.
