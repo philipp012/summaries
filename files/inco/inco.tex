@@ -50,6 +50,26 @@ berechnet
 Das Ziel der Kompression ist, redundante und je nach Standard auch irrelevante Informationen zu minimieren um Ressourcen (Zeit, Energie, Bandbreite) zu sparen.
 \subsection{Huffman tree}
 Der Huffmantree bietet eine garantiert optimale Codierung. Das heisst eine Codierung mit der geringstmöglichen Redundanz. Dafür ordnet man alle Zeichen nach absteigender Probabilität und verbindet die kleinste Probabilität und die nächstgrössere zu einem Ast. Auf diesem addiert man die beiden Probabilitäten und ordnet den Ast neu ein. Diesen Vorgang wiederholt man, bis man an der Wurzel angekommen ist. Zur Überprüfung: die Summe aller Probabilitäten in der Wurzel muss 1 ergeben.
+\section{Lauflängenkodierung}
+Das Ziel der Lauflängenkodierung ist, Daten möglichst effizient zu speichern. Dabei kann z.B. ``AAAAAABBCCCC'' als ``6A2B4C'' dargestellt werden.
+\subsection{LZ77}
+Der Lempel-Ziv 77 Algorithmus ist ein verlustfreier, tokenbasierter Textkomprimierungsalgorithmus. Er verwendet einen Vorschaufbuffer und einen Suchbuffer. Dabei werden Muster im Vorschaufbuffer im Suchbuffer gesucht, um festzustellen, ob einen bestimmte Zeichenfolge bereits einmal vorgekommen ist. Dabei wird der beste ``Match'' gesucht. Dieser kann entweder gar nicht gefunden werden (das erste Symbol im Vorschaubuffer wurde noch nie gespeichert) oder einen Treffer von 1 Symbol bis zum gesamten Vorschaubuffer (Falls der komplette Vorschaubuffer so 1:1 bereits abgespeichert worden ist) finden. Ein LZ77-Token besteht aus (Offset|Länge|Symbol). Der Offset besagt, vor wievielen Zeichen der längste Treffer gefunden wurde (0 wenn kein Treffer). Die Länge besagt, wie lang der Treffer war und das Symbol besagt, welches das nächste Symbol nach dem Treffer des Vorschaubuffers war. Die Buffers können variable Längen haben, der Vorschaubuffer muss allerdings 1 Zeichen grösser sein als der Suchbuffer, da ansonsten bei einem Treffer im gesamten Suchbuffer kein weiteres Zeichen aus dem Vorschaubuffer nachgereicht werden könnte.
+\begin{figure}[h]
+		\begin{center}
+		\includegraphics[width=7cm]{img/lz.png}
+		\end{center}
+		\caption{Illustration des LZ77 Algorithmus}
+		\label{fig:Illustration des LZ77 Algorithmus}
+\end{figure}
+\subsection{LZW}
+Der Lempel-Ziv-Welch Algorithmus benutzt im Gegensatz zum LZ77 Algorithmus keine Buffers sondern arbeitet mit einem zur Laufzeit generierten Wörterbuch. Dafür wird jedes Zeichen beim ersten erscheinen mit dem dazugehörigen ASCII-Code (0-255) gespeichert, und als 256-ter Eintrag im Wörterbuch das Zeichen plus das nächstfolgende Zeichen gespeichert. Danach wird immer der beste Treffer gesucht, wobei das Wörterbuch mit jedem weitern Treffer um einen Eintrag wächst und die Einträge immer länger werden, womit bei zunehmender Textlänge und Wortwiederholungsrate die Kompression zunimmt. Um einen LZW-komprimierten Text wieder zu dekodieren wird der Algorithmus ``rückwärts'' ausgeführt. D.h. der erste Token wird aus dem ASCII-Table abgelesen und es wird wieder ein neuer Eintrag an 256-ter Stell angelegt mit dem Zeichen und einem Platzhalter, der mit dem nächsten eingetragenen Zeichen gefüllt wird. So kann das Wörterbuch rekonstruiert werden, was uns erlaubt, es nicht abzuspeichern was noch mehr Speicherplatz spart.
+\begin{figure}[h]
+		\begin{center}
+		\includegraphics[width=7cm]{img/lzw.png}
+		\end{center}
+		\caption{Illustration des LZW Algorithmus}
+		\label{fig:Illustration des LZW Algorithmus}
+\end{figure}
 \section{Mediakompression}
 \subsection{JPEG}
 Das JPEG-Kompressionsverfahren ist ein \textbf{verlustbehafteter} Kompressionsalgorithmus, welcher sich zur komprimierung natürlicher Bilder eignet. Der JPEG-Algorithmus umfasst 7 Schritte.
@@ -58,7 +78,7 @@ Unser Auge ist empflindlicher auf Helligkeitsunterschiede als auf Farbunterschie
 Die Y-Komponente entspricht dem Graustufenbild des Ursprungbildes.
 \begin{figure}[h!]
 		\begin{center}
-		\includegraphics[width=7cm]{img/cbcr.png}
+		\includegraphics[width=5.5cm]{img/cbcr.png}
 		\end{center}
 		\caption{Verhältnis Cb zu Cr}
 		\label{fig:Verhältnis Cb zu Cr}
