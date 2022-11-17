@@ -123,4 +123,20 @@ Die Entropiecodierung dient dem effizienten speichern der quantifizierten Koeffi
 \subsubsection{In Datei verpacken}
 Alle Werte die benötigt werden, um das Bild wieder herzustellen werden nun in eine .jpg Datei gespeichert. Das beinhaltet die komprimierte Koeffizentenmatrix sowie die genutzte Quantisierungstabelle und die entsprechenden Anhaltspunkte zum genutzten RLE-Verfahren.
 
+\subsection{Audiokompression}
+Schallwellen sind analoge Werte, welche zur Speicherung oder Bearbeitung in digitale Werte umgewandelt werden müssen. Dafür ``tastet'' man die analoge Frequenz ab und arbeitet mit diesen Werten weiter.
+\subsubsection{Abtasten}
+Das Shannon (oder Shannon-Nyquist Theorem) besagt, dass die Abtastfrequenz für ein Signal mit höchster Frequenzkomponente $\omega$ grösser als $2\omega$ sein muss,um das Signal garantiert verlustfrei abzubilden. Das menschliche Gehör kann Frequenzen bis zu ca. 22kHz verzeichnen, was jedoch von Gehör zu Gehör unterschiedlich ist. Deshalb wird in der Unterhaltung oft mit einer Abtastrate von 44.1kHz oder höher gearbeitet, da wir Frequenzen über 22kHz, die mit einer solchen Abtastrate verloren gehen, sowieso nicht hören würden.
+
+\subsubsection{Quantisierung}
+Mit der Quantisierung wird die Amplitude der Abtastpunkte festgehalten. Da das eingehende Signal stetig ist, wir jedoch nur mit diskreten Werten arbeiten können, geht hier unweigerlich Information verloren. Die Auflösung der Quantisierung bestimmt, wie viele höhen-Abstufungen für die Amplitude der Frequenz gespeichert werden. Die Werte, welche nicht genau auf einer Höhenabstufung liegen, werden zur nächsten Abstufung auf- beziehugnsweise abgerundet.
+\begin{figure}[h]
+		\includegraphics[width=\linewidth]{img/audioQuantisierung.png}
+		\caption{Quantisierung eines analogen Signals}
+		\label{fig:Quantisierung eines analogen Signals}
+\end{figure}
+\newline
+Bei einer Umwandlung von stetigen zu diskreten Werten entsteht ein Rauschen, so auch bei der Konvertierung von analogen zu digitalen Signalen. Dieses Quantisierungsrauschen ist die Differenz des Rohsignals zu dem digitalen Signal. Daraus folgt, je feiner die diskreten Werte granulier sind, desto kleiner ist auch das Rauschen. Die Lautstärke des Rauschens beträgt $6\textrm{dB} \cdot \textrm{Anzahl Bit}$
+\subsubsection{Pulsecode Modulierung}
+
 \end{document}
