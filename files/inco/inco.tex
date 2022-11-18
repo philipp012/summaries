@@ -23,18 +23,18 @@
 \section{Informationstheorie}
 Eine Information ist etwas, was vor seinem Eintreffen noch nicht bekannt war und kann viele Formen annehmen (Ton, Symbol, Text, Wert, ...). Information kann anhand der von ihr beseitigten Unsicherheit gemessen werden. Technisch gesehen ist die kleinste Masseinheit einer Information 1 Bit, sprich eine binäre Entscheidung.
 \subsection{Datenquellen}
-Eine Datenquelle wird als ``diskret" bezeichnet, wenn sie abzählbare Messwerte liefert. Beispiele dafür sind digitale Sensoren, Ziehung der Lottozahlen, Wetterbericht im Radio. Datenqulle die ``stetig" sind liefern nicht abzählbare Messewerte. Beispiele dafür sind jegliche analoge Messewerte (regeln eines Potentiometers, ablesen eines analogen Thermoeters).
+Eine Datenquelle wird als ``diskret" bezeichnet, wenn sie abzählbare Messwerte liefert. Beispiele dafür sind digitale Sensoren, Ziehung der Lottozahlen, Wetterbericht im Radio. Datenqulle die ``stetig'' sind, liefern nicht abzählbare Messewerte. Beispiele dafür sind jegliche analoge Messewerte (regeln eines Potentiometers, ablesen eines analogen Thermometers).
 
-Zudem kann eine Datenquelle ``memoryless" sein, wenn die Messwerte statistisch unabhängig voneinander sind.
+Zudem kann eine Datenquelle ``memoryless'' sein, wenn die Messwerte statistisch unabhängig voneinander sind.
 \subsection{Formeln}
-\paragraph{Die Warscheinlichkeit} einer Information wird errechnet indem man die Vorkommnis der Information durch die gesamten Vorkommnisse teilt. \[
+\paragraph{Die Warscheinlichkeit} einer Information wird berechnet, indem man die Vorkommnis der Information durch die gesamten Vorkommnisse teilt. \[
 		P(x) = \frac{k(x)}{K} 
 \]
 \paragraph{Der Informationsgehalt} einer Information wird in Bit angegeben und wird mit \[
 		I(x)= \log_{2} \frac{1}{P(x)}
 \]
 berechnet
-\paragraph{Die Entropie} einer Datenquelle bezeichnet den durchschnittlichen Informationsgehalt aller Informationen die diese liefert. Die Masseinheit der Entropie ist Bit/Symbol.
+\paragraph{Die Entropie} einer Datenquelle bezeichnet den durchschnittlichen Informationsgehalt aller Informationen die diese liefert. Die Masseinheit der Entropie ist $ \frac{\textrm{Bit}}{\textrm{Symbol}} $
 \[
 		H(x) = \sum_{n=0}^{N-1} P(x_n) \log_{2} \frac{1}{P(x_n)}
 \]
@@ -149,14 +149,41 @@ Schallwellen sind analoge Werte, welche zur Speicherung oder Bearbeitung in digi
 Das Shannon (oder Shannon-Nyquist Theorem) besagt, dass die Abtastfrequenz für ein Signal mit höchster Frequenzkomponente $\omega$ grösser als $2\omega$ sein muss,um das Signal garantiert verlustfrei abzubilden. Das menschliche Gehör kann Frequenzen bis zu ca. 22kHz verzeichnen, was jedoch von Gehör zu Gehör unterschiedlich ist. Deshalb wird in der Unterhaltung oft mit einer Abtastrate von 44.1kHz oder höher gearbeitet, da wir Frequenzen über 22kHz, die mit einer solchen Abtastrate verloren gehen, sowieso nicht hören würden.
 
 \subsubsection{Quantisierung}
-Mit der Quantisierung wird die Amplitude der Abtastpunkte festgehalten. Da das eingehende Signal stetig ist, wir jedoch nur mit diskreten Werten arbeiten können, geht hier unweigerlich Information verloren. Die Auflösung der Quantisierung bestimmt, wie viele höhen-Abstufungen für die Amplitude der Frequenz gespeichert werden. Die Werte, welche nicht genau auf einer Höhenabstufung liegen, werden zur nächsten Abstufung auf- beziehugnsweise abgerundet.
+Mit der Quantisierung wird die Amplitude der Abtastpunkte festgehalten. Da das eingehende Signal stetig ist, wir jedoch nur mit diskreten Werten arbeiten können, geht hier unweigerlich Information verloren. Die Auflösung der Quantisierung bestimmt, wie viele Höhenabstufungen für die Amplitude der Frequenz gespeichert werden. Die Werte, welche nicht genau auf einer Höhenabstufung liegen, werden zur nächsten Abstufung auf- beziehungsweise abgerundet.
 \begin{figure}[h]
 		\includegraphics[width=\linewidth]{img/audioQuantisierung.png}
 		\caption{Quantisierung eines analogen Signals}
 		\label{fig:Quantisierung eines analogen Signals}
 \end{figure}
 \newline
-Bei einer Umwandlung von stetigen zu diskreten Werten entsteht ein Rauschen, so auch bei der Konvertierung von analogen zu digitalen Signalen. Dieses Quantisierungsrauschen ist die Differenz des Rohsignals zu dem digitalen Signal. Daraus folgt, je feiner die diskreten Werte granulier sind, desto kleiner ist auch das Rauschen. Die Lautstärke des Rauschens beträgt $6\textrm{dB} \cdot \textrm{Anzahl Bit}$
+Bei einer Umwandlung von stetigen zu diskreten Werten entsteht ein Rauschen, so auch bei der Konvertierung von analogen zu digitalen Signalen. Dieses Quantisierungsrauschen ist die Differenz des Rohsignals zu dem digitalen Signal. Daraus folgt, je feiner die diskreten Werte granuliert sind, desto kleiner ist auch das Rauschen. Die Lautstärke des Rauschens beträgt $6\textrm{dB} \cdot \textrm{Anzahl Bit}$
 \subsubsection{Pulsecode Modulierung}
+Die Pulsecode Modulierung fasst die abgetasteten und quantisierten Menge zusammen, mit dem Ziel, diese möglichst effizient zu speichern/transportieren. Dafür gibt es verschiedene Herangehensweisen. Gemessen wird die Effektivität der Modulierung durch die Bitrate (Bits/Sekunde). Dafür wird die Anzahl Abtastpunkte mit der Quantisierungstiefe multipliziert. Beispiel anhand des europischen Telefonstandards ITU\_T G.711 (A-Law): $$8000\textrm{Hz} \cdot 8\textrm{Bit} = 64 \textrm{KBit/s}$$
+Es gibt viele PCM Standards, von denen ein paar hier beschrieben werden.
+\paragraph{Linear PCM}
+Es wird für jeden Abtastpunkt die Amplitude numerisch festgehalten.
+\paragraph{Differential PCM}
+Es wird jeweils die Veränderung der Amplitude relativ zum letzten Abtastpunkt numerisch festgehalten.
+\paragraph{Adaptive Differential PCM}
+Es wird jeweils die Veränderung zur Veränderung der Amplitude relativ zum letzten Abtastpunkt numerisch festgehalten.
+
+\subsubsection{Verlustfreie Audiokompression}
+Wave und Flac bieten die Möglichkeit, PCM-Signale verlustfrei abzuspeichern. Wichtig ist dabei, dass nur bei der Speicherung des PCM-Signals keine weitern Information verloren gehen, das gespeicherte digitale PCM-Signal beinhaltet allerdings bereits einen gewissen Verlust gegenüber dem aufgenommenen Analogen Signal. Eine Wave Datei komprimiert das PCM-Signal nicht, wohingegen der Flac-Standard ein Verfahren ähnlich dem LZ-Algorithmus, wodurch eine verlustfreie Kompression möglich ist.
+\subsubsection{Verlustbehaftete Audiokompression}
+Die Verlustbehaftete Audiokompression 2 Faktoren aus. Zum einen ist unser Gehör nicht gleich empfindlich auf alle Frequenzen. Das erlaubt es uns, nicht/kaum hörbare Töne zu verwerfen und nur die relevanten Frequenzen abzuspeichern.
+\begin{figure}[h]
+		\begin{center}
+		\includegraphics[width=8cm]{img/hörschwelle.png}
+		\end{center}
+		\caption{menschliche Hörschwelle über dem Frequenzband}
+		\label{fig:menschliche Hörschwelle über dem Frequenzband}
+\end{figure}
+\newline
+Weiterer Sparbedarf besteht bei kleinen Amplituden in der Nähe von grösseren Amplituden. Unser Gehör passt sich lauten Schallereignissen an und blendet kurz vor und ein bisschen länger nach einem lauten Ton leisere Töne aus. Je höher die Amplitude eines lauten Ereignisses, desto länger bleibt unser Gehör auf diese Amplitude angepasst. Durch diesen Maskierungseffekt den hohe Amplituden auf kleinere Amplituden ausüben können wir weitere Informationen verwerfen, da diese von unserem Gehör schlechter, wenn überhaupt, wahrgenommen werden können. Dieser Maskierungseffekt wird genutzt, indem das Audiosignal in unterschiedliche Frequenzbänder unterteilt wird, die mit verschiedenen Bittiefen abgetastet werden. Dabei wird die Bittiefe möglichst klein gehalten, wobei das dadurch steigende Quantisierungsrauschen immernoch durch den Maskierungseffekt unter der Höhrschwelle gehalten wird.  
+\subsubsection{Schalldruckpegel}
+Der Schalldruckpegel ist eine logarithmische Grösse in Dezibel zur Beschreibung der Stärke eines Schallereignises. Berechnet wird er Schalldruckpegel mit folgender Formel: 
+$$L = 20 \cdot \log_{2}( \frac{p}{p_0} )$$
+, wobei L den Schalldruck in Dezibel repräsentiert, $p$ für den effektiven Schalldruck und $p_0$ den Bezugsschalldruck (die Hörschwelle beträgt $2\cdot 10^{-5}$Pa). Eine Verdopplung des Schalldruckpegels entspricht einer Zunahme von ca. 6dB.
+
 
 \end{document}

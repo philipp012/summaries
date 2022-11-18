@@ -26,3 +26,9 @@
 \contentsline {subsubsection}{\numberline {5.2.1}Abtasten}{9}{}%
 \contentsline {subsubsection}{\numberline {5.2.2}Quantisierung}{10}{}%
 \contentsline {subsubsection}{\numberline {5.2.3}Pulsecode Modulierung}{10}{}%
+\contentsline {paragraph}{Linear PCM}{10}{}%
+\contentsline {paragraph}{Differential PCM}{10}{}%
+\contentsline {paragraph}{Adaptive Differential PCM}{11}{}%
+\contentsline {subsubsection}{\numberline {5.2.4}Verlustfreie Audiokompression}{11}{}%
+\contentsline {subsubsection}{\numberline {5.2.5}Verlustbehaftete Audiokompression}{11}{}%
+\contentsline {subsubsection}{\numberline {5.2.6}Schalldruckpegel}{12}{}%
