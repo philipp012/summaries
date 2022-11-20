@@ -63,8 +63,9 @@
 \contentsline {subsubsection}{\numberline {9.3.2}Halbordnung}{11}{}%
 \contentsline {subsubsection}{\numberline {9.3.3}Total-/ Linearordnung}{11}{}%
 \contentsline {subsubsection}{\numberline {9.3.4}Wohlordnung}{11}{}%
-\contentsline {section}{\numberline {10}Rekursive Strukturen}{12}{}%
-\contentsline {subsection}{\numberline {10.1}Vollständige Induktion}{12}{}%
-\contentsline {section}{\numberline {11}Unendlichkeiten}{12}{}%
-\contentsline {subsection}{\numberline {11.1}Mächtigkeiten}{12}{}%
-\contentsline {subsection}{\numberline {11.2}Cantor}{13}{}%
+\contentsline {section}{\numberline {10}Peano-Axiome}{12}{}%
+\contentsline {section}{\numberline {11}Rekursive Strukturen}{12}{}%
+\contentsline {subsection}{\numberline {11.1}Vollständige Induktion}{12}{}%
+\contentsline {section}{\numberline {12}Unendlichkeiten}{12}{}%
+\contentsline {subsection}{\numberline {12.1}Mächtigkeiten}{12}{}%
+\contentsline {subsection}{\numberline {12.2}Cantor}{13}{}%

@@ -112,7 +112,7 @@ Eine Äquivalenz stellt ein logisches Gleichnis dar. Dabei gilt, wenn \(A \Leftr
 \paragraph{Kommutativität} \(A \wedge B \Leftrightarrow B \wedge A\)
 \paragraph{Assoziativität} \((A \wedge B) \wedge C \Leftrightarrow A \wedge (B \wedge C)\)
 \paragraph{Distributivität} \(A \wedge (B \vee C) \Leftrightarrow (A \wedge B) \vee (A \wedge C)\)
-\paragraph{Implikation} \(A \Rightarrow B \Leftrightarrow \neg A \wedge B\)
+\paragraph{Implikation} \(A \Rightarrow B \Leftrightarrow \neg A \lor B\)
 
 \section{Quantoren}
 Quantore erlauben uns aus bestehenden Prädikaten neue Prädikate oder Aussagen zu bilden. Dafür gibt es zwei quantifizierende Operatoren: den Allquantor \(\forall\), der besagt \textit{für alle gilt} und der Existenzquantor \(\exists\), der besagt \textit{für mindestens 1 Element gilt}. Durch die quantifizierung wird ein \(n\)-stelliges Prädikat in ein \(n-1\)-stelliges Prädikat umgeformt.
@@ -283,6 +283,19 @@ Halbordnung und alle Elemente der Menge $M$ können verglichen werden.
 \subsubsection{Wohlordnung}
 Totalordnung und jede nicht-leere Teilmenge der Menge $M$ enthält ein R-minimales Element.
 \newpage
+\section{Peano-Axiome}
+\begin{enumerate}
+		\item	$0 \in \mathbb{N}$
+		\item $\forall_x \in \mathbb{N}(x=x)$
+		\item $\forall_{x,y} \in \mathbb{N}(x=y \Rightarrow y=x)$
+		\item $\forall_{x,y,z} \in \mathbb{N}(x=y \land y=z \Rightarrow x=z)$
+		\item $\forall_x \in \mathbb{N}(x=y\Rightarrow y \in \mathbb{N})$
+		\item $\forall_x \in \mathbb{N} (x+1 \in \mathbb{N})$
+		\item $\forall_{x,y} \in \mathbb{N} (x+1=y+1 \Rightarrow x=y)$
+		\item $\neg \exists_x \in \mathbb{N}(x+1 = 0)$
+		\item $\phi(n) \land \phi(n+1), n \in \mathbb{N} \Rightarrow \forall_x \in \mathbb{N} \phi(x)$
+\end{enumerate}
+
 \section{Rekursive Strukturen}
 Rekursive Strukturen berufen sich auf die folgenden Peano-Axiome:
 \begin{itemize}
@@ -298,7 +311,6 @@ Rekursive Strukturen berufen sich auf die folgenden Peano-Axiome:
 Eine undenlich grosse Menge ist eine Menge, die endlos viele Elemente enthält. Allerdings ist das rechnen mit solchen Mengen kompliziert, das z.b. \(| \mathbb{N}| = |2 \mathbb{N}|\) wahr ist.
 \subsection{Mächtigkeiten}
 Unendlich grosse Mengen können in \textbf{abzählbar grosse} und in \textbf{überabzählbar grosse} Mengen unterteilt werden. Mit abzählbar grossen unendlichen Mengen sind Mengen gemeint, die mit den natürlichen Zahlen durch nummeriert werden können. Sprich es besteht eine \textit{Bijektivität} von \( \mathbb{N}\) zu dieser Menge. Beispiele für abzählbar unendlich grosse Mengen sind \( \mathbb{N}\), \( \mathbb{Z}\), \( \mathbb{R}\) aber auch kartesische Produkte wie \( \mathbb{N}\times \mathbb{N}\) oder \( \mathbb{R}\times \mathbb{R}\). Ein Beispiel für eine überabzählbar grosse Menge ist z.b. \( \mathbb{Q}\) oder demnach auch \( \mathbb{Q}\times \mathbb{Q}\). Eine Menge \(X\) ist genau dann überabzählbar, wenn eine Liste \(x_1\), \( x_2\), \(x_3, ...\) nie komplett ist.
-
 \newpage
 \subsection{Cantor}
 Georg Cantor war ein deutscher Mathematiker, der mit seinen zwei Diagonalargumenten bewiesen hat, dass 1. \( \mathbb{R}\) abzählbar und 2. \( \mathbb{Q}\) überabzählbar ist.
