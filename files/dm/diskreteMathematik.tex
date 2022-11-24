@@ -4,6 +4,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[german]{babel}
+\usepackage{mwe}
 \pagestyle{fancy}
 
 \author{Philipp Kiss}
@@ -136,6 +137,21 @@ Die Negation muss stur wörtlich verstanden werden. Z.b. \textit{Nur ein Element
 
 \paragraph{Distributivität}
 \newpage
+
+\section{Peano-Axiome}
+\begin{enumerate}
+		\item	$0 \in \mathbb{N}$
+		\item $\forall_x \in \mathbb{N}(x=x)$
+		\item $\forall_{x,y} \in \mathbb{N}(x=y \Rightarrow y=x)$
+		\item $\forall_{x,y,z} \in \mathbb{N}(x=y \land y=z \Rightarrow x=z)$
+		\item $\forall_x \in \mathbb{N}(x=y\Rightarrow y \in \mathbb{N})$
+		\item $\forall_x \in \mathbb{N} (x+1 \in \mathbb{N})$
+		\item $\forall_{x,y} \in \mathbb{N} (x+1=y+1 \Rightarrow x=y)$
+		\item $\neg \exists_x \in \mathbb{N}(x+1 = 0)$
+		\item $\phi(n) \land \phi(n+1), n \in \mathbb{N} \Rightarrow \forall_x \in \mathbb{N} \phi(x)$
+\end{enumerate}
+
+
 
 \section{Beweistechniken}
 \subsection{Implikation}
@@ -282,19 +298,25 @@ Präordnung und es besteht eine Antisymmetrie.
 Halbordnung und alle Elemente der Menge $M$ können verglichen werden.
 \subsubsection{Wohlordnung}
 Totalordnung und jede nicht-leere Teilmenge der Menge $M$ enthält ein R-minimales Element.
-\newpage
-\section{Peano-Axiome}
-\begin{enumerate}
-		\item	$0 \in \mathbb{N}$
-		\item $\forall_x \in \mathbb{N}(x=x)$
-		\item $\forall_{x,y} \in \mathbb{N}(x=y \Rightarrow y=x)$
-		\item $\forall_{x,y,z} \in \mathbb{N}(x=y \land y=z \Rightarrow x=z)$
-		\item $\forall_x \in \mathbb{N}(x=y\Rightarrow y \in \mathbb{N})$
-		\item $\forall_x \in \mathbb{N} (x+1 \in \mathbb{N})$
-		\item $\forall_{x,y} \in \mathbb{N} (x+1=y+1 \Rightarrow x=y)$
-		\item $\neg \exists_x \in \mathbb{N}(x+1 = 0)$
-		\item $\phi(n) \land \phi(n+1), n \in \mathbb{N} \Rightarrow \forall_x \in \mathbb{N} \phi(x)$
-\end{enumerate}
+\section{Unendlichkeiten}
+Eine undenlich grosse Menge ist eine Menge, die endlos viele Elemente enthält. Allerdings ist das rechnen mit solchen Mengen kompliziert, das z.b. \(| \mathbb{N}| = |2 \mathbb{N}|\) wahr ist.
+\subsection{Mächtigkeiten}
+Unendlich grosse Mengen können in \textbf{abzählbar grosse} und in \textbf{überabzählbar grosse} Mengen unterteilt werden. Mit abzählbar grossen unendlichen Mengen sind Mengen gemeint, die mit den natürlichen Zahlen durch nummeriert werden können. Sprich es besteht eine \textit{Bijektivität} von \( \mathbb{N}\) zu dieser Menge. Beispiele für abzählbar unendlich grosse Mengen sind \( \mathbb{N}\), \( \mathbb{Z}\), \( \mathbb{R}\) aber auch kartesische Produkte wie \( \mathbb{N}\times \mathbb{N}\) oder \( \mathbb{R}\times \mathbb{R}\). Ein Beispiel für eine überabzählbar grosse Menge ist z.b. \( \mathbb{Q}\) oder demnach auch \( \mathbb{Q}\times \mathbb{Q}\). Eine Menge \(X\) ist genau dann überabzählbar, wenn eine Liste \(x_1\), \( x_2\), \(x_3, ...\) nie komplett ist.
+\subsection{Cantor}
+Georg Cantor war ein deutscher Mathematiker, der mit seinen zwei Diagonalargumenten bewiesen hat, dass 1. \( \mathbb{R}\) abzählbar und 2. \( \mathbb{Q}\) überabzählbar ist.
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{img/cantor1.png}
+        \caption{Erstes Diagonalargument}
+    \end{minipage}\hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{img/cantor.png}
+        \caption{Zweites Diagonalargument}
+    \end{minipage}
+\end{figure}
 
 \section{Rekursive Strukturen}
 Rekursive Strukturen berufen sich auf die folgenden Peano-Axiome:
@@ -305,32 +327,34 @@ Rekursive Strukturen berufen sich auf die folgenden Peano-Axiome:
 \end{itemize}
 
 \subsection{Vollständige Induktion}
+Die vollständige Induktion ist eine Beweistechnik, die es uns erlaubt rekursive Beweise zu führen. Diese Art von Beweisen werden benötigt, wenn eine Annahme $A$ für eine Zahl $a \in \mathbb{N}$ gilt, und überprüft werden soll, ob $A$ auch für alle Zahlen $n \geq a, n \in \mathbb{N}$ gilt.
+Die vollständige Induktion folgt einem aus drei Schritte bestehenden Muster welches an folgendem Beispiel gezeigt wird.
+$$A(n):= \textrm{Für alle Zahlen $n \in \mathbb{N}$ soll gelten: } \sum_{i=1}^n i = \frac{n(n+1)}{2} $$
+\paragraph{Induktionsanfang (IA):}
+Im ersten Schritt wird überprüft, ob die Aussage für das kleinste Element zutrifft. Wenn die Aussage bereits für das kleinste Element nicht stimmt, stimmt sie auch für alle folgenden nicht. Die Aussage wäre in diesem Fall widerlegt.
+\newline
+Zur Überprüfung setzen wir für $n$ 1 ein, da $\textrm{min}(\mathbb{N}) = 1$ 
+\begin{align*}
+		\sum_{i=1}^1 i &= \frac{1(1+1)}{2} \\
+		1 &= \frac{2}{2} \\
+		1 &= 1
+\end{align*}
 
+\paragraph{Induktionsvoraussetzung (IV)}
+Aus der Überprüfung von IA folgt, dass 
+$$\exists_n \in \mathbb{N} A(n)$$
+Daraus folgt, dass die Aussage für das kleinste Element bewiesen ist und, dass wir weitere Vorkommnisse von $ \sum_{i=1}^n i$ durch $ \frac{n(n+1)}{2} $ ersetzen können.
+\paragraph{Induktionsschluss (IS)} Im letzten Schritt wollen wir überprüfen, ob $$A(n) \Rightarrow A(n+1)$$
+Um dies zu überprüfen, setzen wir $(n+1)$ für alle Vorkommnisse von $n$ in $A(n)$ ein.
+\begin{align*}
+		\sum_{i=1}^{(n+1)} i &= \frac{(n+1)((n+1)+1)}{2} \\
+		\sum_{i=1}^{n} i + \sum_{i=(n+1)}^{(n+1)} i &= \frac{(n+1)(n+2)}{2} \\
+		\frac{n(n+1)}{2} + (n+1) &= \frac{(n+1)(n+2)}{2} \\
+		\frac{n(n+1) + 2(n+1)}{2} &= \frac{(n+1)(n+2)}{} \\
+		\frac{(n+1)(n+2)}{2} &= \frac{(n+1)(n+2)}{2} 
+\end{align*}
+Hiermit haben wir bewiesen, dass $A(n) \Rightarrow A(n+1)$. Das heisst, dass die Aussage $A$ für alle natürlichen Zahlen stimmt.
+$$\forall_n \in \mathbb{N}A(n)$$
 
-\section{Unendlichkeiten}
-Eine undenlich grosse Menge ist eine Menge, die endlos viele Elemente enthält. Allerdings ist das rechnen mit solchen Mengen kompliziert, das z.b. \(| \mathbb{N}| = |2 \mathbb{N}|\) wahr ist.
-\subsection{Mächtigkeiten}
-Unendlich grosse Mengen können in \textbf{abzählbar grosse} und in \textbf{überabzählbar grosse} Mengen unterteilt werden. Mit abzählbar grossen unendlichen Mengen sind Mengen gemeint, die mit den natürlichen Zahlen durch nummeriert werden können. Sprich es besteht eine \textit{Bijektivität} von \( \mathbb{N}\) zu dieser Menge. Beispiele für abzählbar unendlich grosse Mengen sind \( \mathbb{N}\), \( \mathbb{Z}\), \( \mathbb{R}\) aber auch kartesische Produkte wie \( \mathbb{N}\times \mathbb{N}\) oder \( \mathbb{R}\times \mathbb{R}\). Ein Beispiel für eine überabzählbar grosse Menge ist z.b. \( \mathbb{Q}\) oder demnach auch \( \mathbb{Q}\times \mathbb{Q}\). Eine Menge \(X\) ist genau dann überabzählbar, wenn eine Liste \(x_1\), \( x_2\), \(x_3, ...\) nie komplett ist.
-\newpage
-\subsection{Cantor}
-Georg Cantor war ein deutscher Mathematiker, der mit seinen zwei Diagonalargumenten bewiesen hat, dass 1. \( \mathbb{R}\) abzählbar und 2. \( \mathbb{Q}\) überabzählbar ist.
-\begin{center}
-\begin{figure}[h]
-		\begin{center}
-		\includegraphics[width=5cm]{img/cantor1.png}
-		\caption{erstes Diagonalargument}
-		\label{fig:erstes Diagonalargument}
-		\end{center}
-\end{figure}
-\end{center}
-\begin{center}
-\begin{figure}[h]
-		\begin{center}
-		\includegraphics[width=5cm]{img/cantor.png}
-		\caption{zweites Diagonalargument}
-		\label{fig:zweites Diagonalargument}
-		\end{center}
-\end{figure}
-\end{center}
 
 \end{document}

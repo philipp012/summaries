@@ -23,49 +23,52 @@
 \contentsline {paragraph}{Negation}{5}{}%
 \contentsline {paragraph}{Kommutativität}{5}{}%
 \contentsline {paragraph}{Distributivität}{5}{}%
-\contentsline {section}{\numberline {4}Beweistechniken}{6}{}%
-\contentsline {subsection}{\numberline {4.1}Implikation}{6}{}%
-\contentsline {subsection}{\numberline {4.2}Widerspruch}{6}{}%
-\contentsline {subsection}{\numberline {4.3}Gegenbeispiel}{6}{}%
-\contentsline {subsection}{\numberline {4.4}Kontraposition}{6}{}%
-\contentsline {subsection}{\numberline {4.5}Äquivalenz}{6}{}%
-\contentsline {section}{\numberline {5}Belegung}{6}{}%
-\contentsline {section}{\numberline {6}Normalformen}{6}{}%
-\contentsline {subsection}{\numberline {6.1}Negationsnormalform}{7}{}%
-\contentsline {subsection}{\numberline {6.2}konjunktive Normalform}{7}{}%
-\contentsline {subsection}{\numberline {6.3}disjunktive Normalform}{7}{}%
-\contentsline {section}{\numberline {7}Mengenlehre}{7}{}%
-\contentsline {paragraph}{Aufzählende Schreibweise}{7}{}%
-\contentsline {paragraph}{Intervallschreibweise}{7}{}%
-\contentsline {paragraph}{Prädikatschreibweise}{7}{}%
-\contentsline {subsection}{\numberline {7.1}Mengenoperationen}{8}{}%
-\contentsline {subsubsection}{\numberline {7.1.1}Teilmengen}{8}{}%
-\contentsline {subsubsection}{\numberline {7.1.2}Gleichheit}{8}{}%
-\contentsline {subsubsection}{\numberline {7.1.3}Potenzmenge}{8}{}%
-\contentsline {subsubsection}{\numberline {7.1.4}Partition}{8}{}%
-\contentsline {subsubsection}{\numberline {7.1.5}Schnittmenge}{8}{}%
-\contentsline {subsubsection}{\numberline {7.1.6}Vereinigung}{9}{}%
-\contentsline {subsubsection}{\numberline {7.1.7}Differenz}{9}{}%
-\contentsline {subsubsection}{\numberline {7.1.8}Komplement}{9}{}%
-\contentsline {subsubsection}{\numberline {7.1.9}Kartesisches Produkt}{9}{}%
-\contentsline {subsubsection}{\numberline {7.1.10}Disjunkte Mengen}{9}{}%
-\contentsline {section}{\numberline {8}Funktionen}{9}{}%
-\contentsline {section}{\numberline {9}Relationen}{10}{}%
-\contentsline {subsection}{\numberline {9.1}Homogene Relationen}{10}{}%
-\contentsline {subsubsection}{\numberline {9.1.1}Reflexion}{10}{}%
-\contentsline {subsubsection}{\numberline {9.1.2}Symmetrie}{10}{}%
-\contentsline {subsubsection}{\numberline {9.1.3}Anti-Symmetrie}{10}{}%
-\contentsline {subsubsection}{\numberline {9.1.4}Transition}{10}{}%
-\contentsline {subsection}{\numberline {9.2}Äquivalenzrelation}{11}{}%
-\contentsline {subsubsection}{\numberline {9.2.1}Äquivalenzklassen}{11}{}%
-\contentsline {subsection}{\numberline {9.3}Ordnungsrelation}{11}{}%
-\contentsline {subsubsection}{\numberline {9.3.1}Präordnung}{11}{}%
-\contentsline {subsubsection}{\numberline {9.3.2}Halbordnung}{11}{}%
-\contentsline {subsubsection}{\numberline {9.3.3}Total-/ Linearordnung}{11}{}%
-\contentsline {subsubsection}{\numberline {9.3.4}Wohlordnung}{11}{}%
-\contentsline {section}{\numberline {10}Peano-Axiome}{12}{}%
-\contentsline {section}{\numberline {11}Rekursive Strukturen}{12}{}%
-\contentsline {subsection}{\numberline {11.1}Vollständige Induktion}{12}{}%
-\contentsline {section}{\numberline {12}Unendlichkeiten}{12}{}%
-\contentsline {subsection}{\numberline {12.1}Mächtigkeiten}{12}{}%
-\contentsline {subsection}{\numberline {12.2}Cantor}{13}{}%
+\contentsline {section}{\numberline {4}Peano-Axiome}{6}{}%
+\contentsline {section}{\numberline {5}Beweistechniken}{6}{}%
+\contentsline {subsection}{\numberline {5.1}Implikation}{6}{}%
+\contentsline {subsection}{\numberline {5.2}Widerspruch}{6}{}%
+\contentsline {subsection}{\numberline {5.3}Gegenbeispiel}{6}{}%
+\contentsline {subsection}{\numberline {5.4}Kontraposition}{6}{}%
+\contentsline {subsection}{\numberline {5.5}Äquivalenz}{6}{}%
+\contentsline {section}{\numberline {6}Belegung}{7}{}%
+\contentsline {section}{\numberline {7}Normalformen}{7}{}%
+\contentsline {subsection}{\numberline {7.1}Negationsnormalform}{7}{}%
+\contentsline {subsection}{\numberline {7.2}konjunktive Normalform}{7}{}%
+\contentsline {subsection}{\numberline {7.3}disjunktive Normalform}{7}{}%
+\contentsline {section}{\numberline {8}Mengenlehre}{7}{}%
+\contentsline {paragraph}{Aufzählende Schreibweise}{8}{}%
+\contentsline {paragraph}{Intervallschreibweise}{8}{}%
+\contentsline {paragraph}{Prädikatschreibweise}{8}{}%
+\contentsline {subsection}{\numberline {8.1}Mengenoperationen}{8}{}%
+\contentsline {subsubsection}{\numberline {8.1.1}Teilmengen}{8}{}%
+\contentsline {subsubsection}{\numberline {8.1.2}Gleichheit}{8}{}%
+\contentsline {subsubsection}{\numberline {8.1.3}Potenzmenge}{8}{}%
+\contentsline {subsubsection}{\numberline {8.1.4}Partition}{9}{}%
+\contentsline {subsubsection}{\numberline {8.1.5}Schnittmenge}{9}{}%
+\contentsline {subsubsection}{\numberline {8.1.6}Vereinigung}{9}{}%
+\contentsline {subsubsection}{\numberline {8.1.7}Differenz}{9}{}%
+\contentsline {subsubsection}{\numberline {8.1.8}Komplement}{9}{}%
+\contentsline {subsubsection}{\numberline {8.1.9}Kartesisches Produkt}{9}{}%
+\contentsline {subsubsection}{\numberline {8.1.10}Disjunkte Mengen}{10}{}%
+\contentsline {section}{\numberline {9}Funktionen}{10}{}%
+\contentsline {section}{\numberline {10}Relationen}{10}{}%
+\contentsline {subsection}{\numberline {10.1}Homogene Relationen}{10}{}%
+\contentsline {subsubsection}{\numberline {10.1.1}Reflexion}{10}{}%
+\contentsline {subsubsection}{\numberline {10.1.2}Symmetrie}{10}{}%
+\contentsline {subsubsection}{\numberline {10.1.3}Anti-Symmetrie}{11}{}%
+\contentsline {subsubsection}{\numberline {10.1.4}Transition}{11}{}%
+\contentsline {subsection}{\numberline {10.2}Äquivalenzrelation}{11}{}%
+\contentsline {subsubsection}{\numberline {10.2.1}Äquivalenzklassen}{11}{}%
+\contentsline {subsection}{\numberline {10.3}Ordnungsrelation}{11}{}%
+\contentsline {subsubsection}{\numberline {10.3.1}Präordnung}{11}{}%
+\contentsline {subsubsection}{\numberline {10.3.2}Halbordnung}{11}{}%
+\contentsline {subsubsection}{\numberline {10.3.3}Total-/ Linearordnung}{12}{}%
+\contentsline {subsubsection}{\numberline {10.3.4}Wohlordnung}{12}{}%
+\contentsline {section}{\numberline {11}Unendlichkeiten}{12}{}%
+\contentsline {subsection}{\numberline {11.1}Mächtigkeiten}{12}{}%
+\contentsline {subsection}{\numberline {11.2}Cantor}{12}{}%
+\contentsline {section}{\numberline {12}Rekursive Strukturen}{13}{}%
+\contentsline {subsection}{\numberline {12.1}Vollständige Induktion}{13}{}%
+\contentsline {paragraph}{Induktionsanfang (IA):}{13}{}%
+\contentsline {paragraph}{Induktionsvoraussetzung (IV)}{13}{}%
+\contentsline {paragraph}{Induktionsschluss (IS)}{13}{}%
