@@ -2,6 +2,7 @@
 \usepackage{fancyhdr}
 \usepackage[german]{babel}
 \usepackage{mwe}
+\usepackage{amsmath}
 \usepackage{graphicx}
 \pagestyle{fancy}
 
@@ -184,6 +185,23 @@ Weiterer Sparbedarf besteht bei kleinen Amplituden in der Nähe von grösseren A
 Der Schalldruckpegel ist eine logarithmische Grösse in Dezibel zur Beschreibung der Stärke eines Schallereignises. Berechnet wird er Schalldruckpegel mit folgender Formel: 
 $$L = 20 \cdot \log_{2}( \frac{p}{p_0} )$$
 , wobei L den Schalldruck in Dezibel repräsentiert, $p$ für den effektiven Schalldruck und $p_0$ den Bezugsschalldruck (die Hörschwelle beträgt $2\cdot 10^{-5}$Pa). Eine Verdopplung des Schalldruckpegels entspricht einer Zunahme von ca. 6dB.
-
+\section{Kanalcodierung}
+Da Datenkanäle (=Datenschnittstellen) per se fehlerbehaftet sind, bedarf es einer Codierung der übertragenen Daten, welche den Empfänger erkennen lässt, ob die Übertragung fehlerfrei erfolgte (BEC) oder sogar eine Korrektur der entstandenen Fehler ermöglicht (FEC). Bei allen möglichen Verfahren wird die Rednundanz erhöht, da nicht mehr nur die Daten sondern auch ein Kontrollmechanismus übertragen werden muss. Beispiele für Kanalcodierungen sind positive oder Negative Quittungen, ein erweiterung der Nachricht durch eine Prüfsumme oder simple mehrfache Übertragung. 
+\subsection{Bit Error Ratio}
+Die Bit Error Ratio, kurz BER, beschreibt die Warscheinlichkeit, dass in einem binären Kanal ein Bit während der Übertragung fälschlicherweise von 1 auf 0 oder von 0 auf 1 gewechselt wird. 
+$$\textrm{BER} = \varepsilon = \frac{\textrm{fehlerhafte Bits}}{\textrm{übertragene Bits}} $$
+Bei einem symmetrischen Kanal gilt $\varepsilon_{1\to0} = \varepsilon_{0\to 1}$, wohingegen die BER für einen asymmetrischen Kanal ungleich sein können.
+\begin{figure}[h]
+		\begin{center}
+		\includegraphics[width=8cm]{img/bsc_error.png}
+		\end{center}
+		\caption{Fehlerwarscheinlichkeiten eines BSC}
+		\label{fig:Fehlerwarscheinlichkeiten eines BSC}
+\end{figure}
+Die Erfolgswarscheinlichkeit der Übertragung eines Frames $A$ mit einer Anzahl Bit $N$ beträgt $$P_{0,N} = (1-\varepsilon)^{N}$$. Im Umkehrschluss beträgt die Fehlerwarscheinlichkeit $1-(1-\varepsilon)^{N}$.
+Die Warscheinlichkeit, dass in einer übertragenen Datensquenz mit $N$ Bits genau $F$ Fehler auftreten beträgt $$P_{F,N} = \binom{N}{F}\cdot \varepsilon^{F}\cdot(1-\varepsilon)^{N-F}$$
+Für die Warscheinlichtkeit bis zu einer bestimmten Anzahl Bitfehler $n$, summiert man diesen Term mit $F=0, F=1, ..., F=n$.
+\section{Fehlererkennung}
+\section{Fehlerkorrektur}
 
 \end{document}

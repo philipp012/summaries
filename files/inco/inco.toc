@@ -32,3 +32,7 @@
 \contentsline {subsubsection}{\numberline {5.2.4}Verlustfreie Audiokompression}{11}{}%
 \contentsline {subsubsection}{\numberline {5.2.5}Verlustbehaftete Audiokompression}{11}{}%
 \contentsline {subsubsection}{\numberline {5.2.6}Schalldruckpegel}{12}{}%
+\contentsline {section}{\numberline {6}Kanalcodierung}{12}{}%
+\contentsline {subsection}{\numberline {6.1}Bit Error Ratio}{12}{}%
+\contentsline {section}{\numberline {7}Fehlererkennung}{13}{}%
+\contentsline {section}{\numberline {8}Fehlerkorrektur}{13}{}%
