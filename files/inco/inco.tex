@@ -202,6 +202,9 @@ Die Erfolgswarscheinlichkeit der Übertragung eines Frames $A$ mit einer Anzahl 
 Die Warscheinlichkeit, dass in einer übertragenen Datensquenz mit $N$ Bits genau $F$ Fehler auftreten beträgt $$P_{F,N} = \binom{N}{F}\cdot \varepsilon^{F}\cdot(1-\varepsilon)^{N-F}$$
 Für die Warscheinlichtkeit bis zu einer bestimmten Anzahl Bitfehler $n$, summiert man diesen Term mit $F=0, F=1, ..., F=n$.
 \section{Fehlererkennung}
+\subsection{Cyclic redundancy check}
+Beim CRC-Verfahren, wird das Datenpolynom um die Anzahl stellen eines vordefinieren Generatorpolynoms verschoben, welche zwischenzeitlich mit 0 gefüllt werden. Dieses erweiterte Datenpolynom wird dann durch das Generatorpolynom dividiert, wobei der entstandene Rest der Polynomdivision in die erweiterten Stellen des Datenpolynoms eingefügt wird. Wenn der Empfänger jetzt das entstandene Datenpolynom jetzt durch das Generatorpolynom teilt und etwas anderes als 0 erhält, wurde die Nachricht korrumpiert. Wenn dabei der Rest 0 rauskommt, wurde die Nachricht sehr warscheinlich nicht verändert.
+\subsection{Blockcodes}
 \section{Fehlerkorrektur}
 
 \end{document}

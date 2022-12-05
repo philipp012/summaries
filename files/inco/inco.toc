@@ -35,4 +35,6 @@
 \contentsline {section}{\numberline {6}Kanalcodierung}{12}{}%
 \contentsline {subsection}{\numberline {6.1}Bit Error Ratio}{12}{}%
 \contentsline {section}{\numberline {7}Fehlererkennung}{13}{}%
+\contentsline {subsection}{\numberline {7.1}Cyclic redundancy check}{13}{}%
+\contentsline {subsection}{\numberline {7.2}Blockcodes}{13}{}%
 \contentsline {section}{\numberline {8}Fehlerkorrektur}{13}{}%
