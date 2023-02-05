@@ -2,36 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<title>Zämefassige</title>
 </head>
 
 <body>
 	<div class="content">
+
+	<button class="accordion">Sem 1</button>
+	<div class="panel">
 		<div class="fach">
 			<a class="btn" href="files/dm/diskreteMathematik.pdf" download="DM.pdf">
-				DM	
+				DM
 			</a>
 		</div>
 		<div class="fach">
 			<a class="btn" href="files/an1/analysis.pdf" download="AN.pdf">
 				AN1
 			</a>
-			</div>
+		</div>
 		<div class="fach">
 			<a class="btn" href="files/ged/ged.pdf" download="GED.pdf">
 				GED
-			</a>
-		</div>
-		<div class="fach">
-			<a class="btn" href="files/ged/cheatsheet.pdf" download="GED_cheatsheet.pdf">
-				GED Spick
 			</a>
 		</div>
 		<div class="fach">
@@ -40,6 +38,27 @@
 			</a>
 		</div>
 	</div>
-</body>
 
+	<button class="accordion">Sem 2</button>
+	<div class="panel">
+	</div>
+	</div>
+
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script>
+</body>
 </html>

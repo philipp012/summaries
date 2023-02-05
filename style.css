@@ -4,11 +4,9 @@
 
 .content {
     width: 70%;
-    background: #eee;
     margin: 30px auto;
     text-align:center;
     padding: 20px;
-    border-radius: 25px;
 }
 
 .btn {
@@ -31,7 +29,36 @@
 }
 
 .fach {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%;
 }
+
+
+.accordion {
+  font-size: large;
+  margin-top: 10px;
+  background-color: #eee;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #eee;
+  display: none;
+  overflow: hidden;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+} 
