@@ -25,7 +25,38 @@ Wörter können aneinander gehängt werden. Diesen Vorgang nennt man \textbf{Kon
 \subsection{Sprache}
 Eine Sprache definiert eine Teilmenge aller möglichen Wörter eines Alphabets. Dabei können Sprachen unendliche viele Wörter enthalten, wobei die Wörter endliche Symbolabfolgen eines endlichen Alphabets sind. Sprachen können gleich den Wörtern konkateniert werden und somit eine neue Sprache bilden.
 
+\newpage
 \section{Regex}
+Regex (= regular expression) ist eine Ausdrucksweise um valide Wörter einer Sprache zu beschreiben. Mit regulären Ausdrücken kann man Muster beschreiben, welche programmatisch auf Strings angewendet werden können. 
+
+\begin{table}[h!]
+		\begin{center}
+				\caption{Regex-Operatoren}
+				\label{tab:Regexoperationen}
+				\begin{tabular}{|c|p{8cm}|}
+						\hline
+						\textbf{Operator} & \textbf{Funktion} \\
+						\hline
+						$()$ & Gruppiert mehrere Symbole um weitere Operationen auf die Gesamte Zeichenkette anzuwenden\\
+						\hline
+						$|$ & Entspricht einem ``oder''\\
+						\hline
+						$*$ & Bedeutet ``beliebig viele'' des gefolgten Elements\\
+						\hline
+						+ & Bedeutet ``mindestens einmal'' das gefolgte Element\\
+						\hline
+						[ ] & Gruppiert mehrere Elemente, von denen eines zutreffen muss\\
+						\hline
+						\textasciicircum & Markiert den Anfang eines Strings\\
+						\hline
+						\$ & Markiert das Ende eines Strings\\
+						\hline
+						? & Bedeutet ``Ein oder Null mal'' das gefolgte Element\\
+						\hline
+				\end{tabular}
+		\end{center}
+\end{table}
+
 
 
 \end{document}
