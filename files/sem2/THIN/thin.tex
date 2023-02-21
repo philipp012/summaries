@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[german]{babel}
+\pagestyle{fancy}
+
+\author{Philipp Kiss}
+
+\lhead{Philipp Kiss}
+\rhead{Theoretische Informatik}
+
+\begin{document}
+\section{Wörter, Alphabete und Sprachen}
+\subsection{Alphabet} 
+Ein Alphabet ist definiert als eine endliche, nicht leere Menge von Symbolen. Alphabete werden in der Regel durch griechische Grossbuchstaben (meist $\Sigma$ oder $\Gamma$) dargestellt.
+\subsection{Wort} 
+Ein Wort ist eine endliche Symbolabfolge bestehend aus Symbolen eines Alphabets. Wörter werden mit einem kleinen Buchstaben bezeichnet. Das leere Wort enthält keine Symbole und wird durch $\varepsilon$ dargestellt. Die Länge eines Wortes  $w$ beschreibt die Anzahl Symbole die dieses enthält und wird mit Betragstrichen visualisiert. Die Häufigkeit eines bestimmten Symbols $x$ in einem Wort $w$ kann mithilfe von $|w|_x$ dargestellt werden. Ein hochgestelltes R eines Wortes entspricht dem Rückwärts gelesenen Wort. Wenn $w = w^{R} \Rightarrow \textrm{\textit{w}  ist ein Palindrom}$.
+\subsubsection{Teilwörter}
+Ein Teilwort kann entweder am Wortanfang (Präfix), in der Wortmitte (Infix) oder am Wortende (Suffix) stehen. Es wird unterschieden zwischen \textit{echten} und \textit{nicht echten} Teilwörtern unterschieden, wobei ein echtes Teilwort nicht dem ganzen Wort entspricht.
+Zu beachten ist, dass $\varepsilon$ ein Teilwort jedes Wortes ist, sowohl als Präfix, Infix und auch als Suffix.
+
+Die Menge aller Wörter mit der Länge $k$ über das Alphabet $\Sigma$ wird als $\Sigma^{k}$ beschrieben. $\Sigma^{0} = \{\varepsilon\}$. Alle Wörter eines Alphabets $\Sigma$ wird als $\Sigma^{}*$ bezeichnet. $\Sigma^{+}$ entspricht $\Sigma^{*} \setminus \{\varepsilon\}$.
+
+Wörter können aneinander gehängt werden. Diesen Vorgang nennt man \textbf{Konkatenation}. Dabei gilt $w \circ v = wv$. Wortpotenzen konkatenieren das gleiche wort $n$ mal aneinander. $a^{3} = aaa$
+\subsection{Sprache}
+Eine Sprache definiert eine Teilmenge aller möglichen Wörter eines Alphabets. Dabei können Sprachen unendliche viele Wörter enthalten, wobei die Wörter endliche Symbolabfolgen eines endlichen Alphabets sind. Sprachen können gleich den Wörtern konkateniert werden und somit eine neue Sprache bilden.
+
+\section{Regex}
+
+
+\end{document}
