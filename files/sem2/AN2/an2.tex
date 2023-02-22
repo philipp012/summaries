@@ -19,7 +19,16 @@ Summen und Differenzen im Integranden können auseinander gezogen werden und als
 $$ \int_{}^{} f(x) + g(x) - h(x) \mathrm{d}x = \int_{}^{} f(x) \mathrm{d}x + \int_{}^{} g(x) \mathrm{d}x - \int_{}^{} h(x) \mathrm{d}x $$
 
 \subsection{Partielle Integration}
-Die partielle Integration ist das Pendant zur Produktregel beim Ableiten und wird benötigt, wenn im Integranden Funktionen multipliziert werden.
+Die partielle Integration ist das Pendant zur Produktregel beim Ableiten und wird benötigt, wenn im Integranden Funktionen multipliziert werden. Die Formel der partiellen Integration ist
+$$u(x) \cdot v(x) - \int_{}^{} u'(x) \cdot v(x) \mathrm{d}x $$
+Wobei für eine Funktion $u(x)$ und für die andere $v'(x)$ eingesetzt wird.
+
+Beispiel:
+$$ \int_{}^{} x \cdot e^{x} \mathrm{d}x $$
+$$u(x) = x, v'(x) = e^{x}$$
+Daraus folgt
+$$x \cdot e^{x} - \int_{}^{} 1 \cdot e^{x} \mathrm{d}x = x \cdot e^{x} - e^{x} = e^{x}(x-1)$$
+
 \subsection{Substitution}
 
 \end{document}
