@@ -29,6 +29,18 @@ $$u(x) = x, v'(x) = e^{x}$$
 Daraus folgt
 $$x \cdot e^{x} - \int_{}^{} 1 \cdot e^{x} \mathrm{d}x = x \cdot e^{x} - e^{x} = e^{x}(x-1)$$
 
+\subsection{Partialbruchzerlegung}
+Mithilfe einer Partialbruchzerlegung kann man eine rationale Funktion als eine Addition von einfacheren Brüchen betrachten. Dies erlaubt uns die einfacheren Brüche einzeln zu integrieren und danach aufzusummieren. Dafür wird das Nennerpolynom als erstes in die Nullstellenform gebracht, woraufhin man die einzelnen Nullstellen ihrer Vielfachheitnach als seperate Brüche mit unbekannten Zählern darstellen kann.Die Summe von Brüchen kann mit dem ursprünglichen Nennerpolynom multipliziert und dem ursprünglichen Zählerpolynom gleichgesetzt werden. Das erlaubt uns ein Gleichungssystem aufzustellen, mit welchem wir die unbekannten Zähler der Partialbrüche berechnen können.Die Summe von Brüchen kann mit dem ursprünglichen Nennerpolynom multipliziert und dem ursprünglichen Zählerpolynom gleichgesetzt werden. Das erlaubt uns ein Gleichungssystem aufzustellen, mit welchem wir die unbekannten Zähler der Partialbrüche berechnen können. Schlussendlich werden die Partialbrüche einzeln integriert.
+
+Beispiel:
+$$ \int_{}^{} \frac{5x+11}{x^{2}+3x-10} \mathrm{d}x = \int_{}^{} \frac{5x+11}{(x+5)(x-2)}  \mathrm{d}x $$
+$$= \int_{}^{} \frac{A}{x+5} + \frac{B}{x-2}  \mathrm{d}x \Rightarrow 5x+11 = A(x-2)+b(x+5)$$
+$$x = -5 \Rightarrow A = 2$$
+$$x=2 \Rightarrow B = 3$$
+$$ \int_{}^{} \frac{2}{x+5} + \frac{3}{x-2}  \mathrm{d}x = \int_{}^{} 2 \frac{1}{x+5} + 3 \frac{1}{x-2}  \mathrm{d}x $$
+$$=2 \ln |x+5|+ 3\ln|x-2|+c$$
+
+
 \subsection{Substitution}
 
 \end{document}

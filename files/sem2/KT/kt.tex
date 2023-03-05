@@ -10,6 +10,7 @@
 \rhead{Kommunikationstechnik}
 
 \begin{document}
+\sloppy
 \section{OSI Modell}
 Das OSI (Open Systems Interconnection) Modell umschreibt den Informationsaustausch zwischen zwei Systemen. Der Informationsaustausch wird in einem aus 7 Schichten bestehenden Stack modelliert. Protokolle definieren den Horizontalen Informationsaustausch (Von Sender Schicht \textit{n} zu Empfänger Schicht \textit{n}), wobei der reale Informationsfluss über die unterliegenden Schichten wandert und schlussendliche in der Layer 1, der Physical Layer, über ein Medium zur Layer 1 des Empfängers fliesst.
 \subsection{``Layer 0'' - Medium}
@@ -65,6 +66,35 @@ bewirkt, dass sich die Übertragungsdistanz und die maximale Bandbreite gegensei
 		\label{fig:Lichtwellenleiter}
 \end{figure}
 \subsection{Layer 1 - Physical Layer}
+Die Physical Layer ist die unterste Schicht des OSI-Modells. Sie ist zuständig für das Übersetzen von Bits in Werte, die über ein Medium übertragen werden kann.
+\subsubsection{Begriffserklärung}
+\begin{table}[h!]
+		\begin{center}
+				\caption{Begriffserklärung}
+				\label{tab:Begriffserklärung}
+				\begin{tabular}{|c|p{9cm}|}
+						\hline
+						\textbf{Begriff} & \textbf{Erklärung} \\
+						\hline
+						Bandbreite & Die Bandbreite beschreibt die Anzahl Bits pro Sekunde die über eine gegebene Leitung mit einem bestimmten Leitungscode übertragen werden können\\
+						\hline
+						Symbolrate & (= Baudrate) beschreibt die Anzahl Symbole pro Sekunde, die über eine Leitung übertragen werden könnnen\\
+						\hline
+						Bitrate & asdf\\
+						\hline
+				\end{tabular}
+		\end{center}
+\end{table}
+\subsubsection{Kopplungsarten}
+Es gibt drei Arten wie Kommunikationspartner miteinander gekoppelt werden können. Eine \textbf{Simplexkopplung} bedeutet, dass nur ein Kommunikationpartner senden kann und ale Anderen nur das Signal empfangen können. Dies findet Anwendung bei Radio und TV. Bei eine \textbf{Halbduplexkopplung} können alle Kommunikationspartner senden und Empfangen aber es können nicht mehrere Kommunikationpartner gleichzeitig senden. Bei einer \textbf{Vollduplexkopplung} können alle Partner gleichzeitig senden und Empfangen. 
+\subsubsection{Verbindungsarten}
+Eine Punkt-zu-Punkt Verbindung bedeutet, dass zwischen zwei Kommunikationspartners eine ungeteilte Leitung liegt. Bei einer shared-Medium Verbindung müssen sich mehrere Kommunikationspartner dasselbe Übertragungsmedium teilen.
+\subsubsection{Übertragungsarten}
+Eine Übertragung kann \textbf{parallel} oder \textbf{seriell} erfolgen. Für eine parallele Übertragung werden mehrere Bits gleichzeitig über verschiedene Kanäle übertragen. Dies führt zu einer höheren Übertragungsrate, erfordert aber auch mehr Infrastruktur. Eine parallele Übertragung eignet sich nur für kurze Distanzen, dementsprechend sind serielle Übertragungen stärker verbreitet. Hierfür werden über einen Kanal alle Bits der Reihe nach gesendet.
+
+Zudem wird zwischen synchronen und asynchronen Übertragungen unterschieden. Bei einer asynchronen Übertragung wird kein Taktsignal mitgegeben, wodurch der Empfänger sich anhand des empfangenen Signals dem Takt des Senders anpassen muss. Bei einer synchronen Übertragung wird neben dem eigentlichen Datenstrom noch ein Takt auf einem zweiten Kanal übertragen. Eine synchrone Übertragung benötigt dementsprechend mehr Infrastruktur, erlaubt aber auch sicherere und schneller Datenübertragungsraten. Bei einer asynchronen Übertragung besteht die Gefahr, dass der Empfänger um >0.5 Bit ``verrutscht'' und deswegen ein Bit des Senders doppelt liest und ein anderes überspringt. Zudem benötigt eine asynchrone Übertragung ein Start- und ein Stoppbit, damit der Empfänger weiss, wann ein Paket anfängt und wieder endet. Das führt zu einer niedrigeren Übertragungsrate.
+
+\subsubsection{Leitungscodes}
 \subsection{Layer 2 - Data Link Layer}
 \subsection{Layer 3 - Network Layer}
 \subsection{Layer 4 - Transport Layer}
