@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.27)  3 MAR 2023 12:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.27)  8 MAR 2023 11:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -173,7 +173,7 @@ at be-steht aus Zust[]anden,
 Here is how much of TeX's memory you used:
  3075 strings out of 478238
  52396 string characters out of 5850456
- 363379 words of memory out of 5000000
+ 364379 words of memory out of 5000000
  21306 multiletter control sequences out of 15000+600000
  471458 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -188,7 +188,7 @@ lic/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
 ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
 er/sfrm1000.pfb>
-Output written on thin.pdf (2 pages, 114119 bytes).
+Output written on thin.pdf (2 pages, 114170 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream

@@ -85,9 +85,9 @@ Die Physical Layer ist die unterste Schicht des OSI-Modells. Sie ist zuständig 
 				\end{tabular}
 		\end{center}
 \end{table}
-\subsubsection{Kopplungsarten}
-Es gibt drei Arten wie Kommunikationspartner miteinander gekoppelt werden können. Eine \textbf{Simplexkopplung} bedeutet, dass nur ein Kommunikationpartner senden kann und ale Anderen nur das Signal empfangen können. Dies findet Anwendung bei Radio und TV. Bei eine \textbf{Halbduplexkopplung} können alle Kommunikationspartner senden und Empfangen aber es können nicht mehrere Kommunikationpartner gleichzeitig senden. Bei einer \textbf{Vollduplexkopplung} können alle Partner gleichzeitig senden und Empfangen. 
 \subsubsection{Verbindungsarten}
+Es gibt drei Arten wie Kommunikationspartner miteinander gekoppelt werden können. Eine \textbf{Simplexkopplung} bedeutet, dass nur ein Kommunikationpartner senden kann und ale Anderen nur das Signal empfangen können. Dies findet Anwendung bei Radio und TV. Bei eine \textbf{Halbduplexkopplung} können alle Kommunikationspartner senden und Empfangen aber es können nicht mehrere Kommunikationpartner gleichzeitig senden. Bei einer \textbf{Vollduplexkopplung} können alle Partner gleichzeitig senden und Empfangen. 
+\subsubsection{Kopplungsarten}
 Eine Punkt-zu-Punkt Verbindung bedeutet, dass zwischen zwei Kommunikationspartners eine ungeteilte Leitung liegt. Bei einer shared-Medium Verbindung müssen sich mehrere Kommunikationspartner dasselbe Übertragungsmedium teilen.
 \subsubsection{Übertragungsarten}
 Eine Übertragung kann \textbf{parallel} oder \textbf{seriell} erfolgen. Für eine parallele Übertragung werden mehrere Bits gleichzeitig über verschiedene Kanäle übertragen. Dies führt zu einer höheren Übertragungsrate, erfordert aber auch mehr Infrastruktur. Eine parallele Übertragung eignet sich nur für kurze Distanzen, dementsprechend sind serielle Übertragungen stärker verbreitet. Hierfür werden über einen Kanal alle Bits der Reihe nach gesendet.
@@ -95,7 +95,15 @@ Eine Übertragung kann \textbf{parallel} oder \textbf{seriell} erfolgen. Für ei
 Zudem wird zwischen synchronen und asynchronen Übertragungen unterschieden. Bei einer asynchronen Übertragung wird kein Taktsignal mitgegeben, wodurch der Empfänger sich anhand des empfangenen Signals dem Takt des Senders anpassen muss. Bei einer synchronen Übertragung wird neben dem eigentlichen Datenstrom noch ein Takt auf einem zweiten Kanal übertragen. Eine synchrone Übertragung benötigt dementsprechend mehr Infrastruktur, erlaubt aber auch sicherere und schneller Datenübertragungsraten. Bei einer asynchronen Übertragung besteht die Gefahr, dass der Empfänger um >0.5 Bit ``verrutscht'' und deswegen ein Bit des Senders doppelt liest und ein anderes überspringt. Zudem benötigt eine asynchrone Übertragung ein Start- und ein Stoppbit, damit der Empfänger weiss, wann ein Paket anfängt und wieder endet. Das führt zu einer niedrigeren Übertragungsrate.
 
 \subsubsection{Leitungscodes}
+Leitungscodes sind Codierungsverfahren, mit dem Ziel die verfügbare Bandbreite effizienter zu Nutzen. Sie machen es möglich, den Takt des Senders und die gesendeten Daten auf einem Kanal zu übertragen. Ausserdem haben Leitungscodes das Ziel, die Gleichspannungsfreiheit aufrecht zu erhalten, was es uns erlaubt Sender und Empfänger galvanisch zu trennen. D.h. die gesamthaft übertragene Spannung sollte so nahe wie möglich bei 0V sein.
 \subsection{Layer 2 - Data Link Layer}
+Die Data Link Layer ist zuständig für die Verpackung von Information in einzelne Frames (Pakete) und das Senden und Empfangen ebenjener an Teilnehmer des gleichen Netzwerks.
+\subsubsection{Framing}
+Die gesendeten Daten werden in einzelne kleinere Pakete aufgeteilt. Dies erhöht zwar die Redundanz, da die Header/Footer der darüberliegenden Schichten mehrmals gesendet werden, hat aber den Vorteil, dass sich der Datenfluss besser kontrollieren lässt und zudem die Fehlerbehandlung erleichtert. Wenn alle Daten in einem Paket gesendet werden würden, könnte man die Kanalkapazität schlecht zwischen mehreren Teilnehmern aufteilen. Mit kleineren Paketen darf jeder in einem kleinen Zeitraum beliebig viele Pakete verschicken und dann im nächsten zugewiesenen Zeitraum die nächsten nachsenden. Alle realen Kanäle haben eine gewisse Fehlerwarscheinlichkeit. Je grösser die Datenmenge pro Paket, desto grösser ist auch die Warscheinlichkeit, dass in diesem Paket ein oder mehrere Bitfehler auftreten. Wenn die Fehleranzahl die möglichen Korrekturmassnahmen überschreitet, muss das Paket erneut gesendet werden. Wenn man riesige Pakete senden würde, würde sich mit gegen 100\% nähernde Warscheinlichkeit ein oder mehrere Fehler einschleichen, wodurch das Paket immer neu gesendet werden müsste, was sehr ineffizient ist. Wenn man die Daten in kleinere Pakete unterteilt lassen sich die Fehlerkorrekturmassnahmen so einrichten, dass sie mit grösster Warscheinlichkeit alle Fehler korrigieren könnten und so Retransmissionen verhindert werden können. Diese zusätzlich Redundanz führt also zu einer effizienteren Kommunikation.
+\paragraph{Asynchrone Übertragung} bedeutet, dass zwischen den Frames nichts gesendet wird. Die gesendeten Frames werden mit einem Startbit versehen, woran der Empfänger erkennt, dass jetzt Daten folgen.
+\paragraph{Synchrone Übertragung} bedeutet, dass im Ruhezustand ein Flag (typisches Flag: $01111110$) gesendet wird.
+\subsubsection{Fehlerbehandlung}
+
 \subsection{Layer 3 - Network Layer}
 \subsection{Layer 4 - Transport Layer}
 \subsection{Layer 5 - Session Layer}

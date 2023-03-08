@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.27)  5 MAR 2023 18:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.27)  8 MAR 2023 11:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -194,30 +194,30 @@ Package pdftex.def Info: img/lwl.png  used on input line 63.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3 <./img/tp.png> <./img/lwl2.png>] [4 <./img/lwl.png>] [5] (./kt.aux) ) 
+[3 <./img/tp.png> <./img/lwl2.png>] [4 <./img/lwl.png>] [5] [6] (./kt.aux) ) 
 Here is how much of TeX's memory you used:
  3105 strings out of 478238
  52849 string characters out of 5850456
- 364407 words of memory out of 5000000
+ 365407 words of memory out of 5000000
  21331 multiletter control sequences out of 15000+600000
  471123 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,11n,67p,1128b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
-></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on kt.pdf (5 pages, 608649 bytes).
+ 60i,11n,67p,1469b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
+</u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5
+.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on kt.pdf (6 pages, 612662 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 87 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

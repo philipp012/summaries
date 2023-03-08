@@ -61,7 +61,9 @@ Regex (= regular expression) ist eine Ausdrucksweise um valide Wörter einer Spr
 \subsection{Endliche Automaten}
 Endliche Automaten sind gedächtnislose Maschinen, die ein konkretes Problem nach einem vorgegebenen Ablauf bearbeiten. Ein Automat besteht aus Zuständen, Übertragungsfunktionen und einem Eingabealphabet. Es gibt mit dem Startzustand und dem akzeptierenden Zustand 2 spezielle Zustände, welche bestimmen, in welchem Zustand der Automat mit einem Problem startet und welche ein valide Endzustande sind.
 \subsubsection{Determinismus \& Nichtdeterminismus}
-Ein deterministischer Automat befolgt einen eindeutigen Ablauf zur Lösung eines Problems. Ein nichtdeterministescher Automat hingegen erlaubt mehrere Mögliche Zustände mit der gleichen Eingabeabfolge, was sie viel flexibleer macht und das Lösen von komplexeren Problemen erlaubt.
+Ein deterministischer Automat befolgt einen eindeutigen Ablauf zur Lösung eines Problems. Ein nichtdeterministescher Automat hingegen erlaubt mehrere Mögliche Zustände mit der gleichen Eingabeabfolge. Zudem können Nichtdeterministische Automaten ohne Input (mit $\varepsilon$-input) den Zustand wechseln.
 
+\subsection{Regularität}
+Mit regulären Ausdrücken, deterministischen endlichen Automaten, nicht deterministischen endlichen Automaten und $\varepsilon$-nicht deterministichen endlichen Automaten lassen sich die gleichen Probleme und Lösungen beschreiben. Alle Sprachen die mit diesen Methoden bearbeitet werden können sind reguläre Sprachen.
 
 \end{document}
