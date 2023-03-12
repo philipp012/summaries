@@ -103,6 +103,7 @@ Die gesendeten Daten werden in einzelne kleinere Pakete aufgeteilt. Dies erhöht
 \paragraph{Asynchrone Übertragung} bedeutet, dass zwischen den Frames nichts gesendet wird. Die gesendeten Frames werden mit einem Startbit versehen, woran der Empfänger erkennt, dass jetzt Daten folgen.
 \paragraph{Synchrone Übertragung} bedeutet, dass im Ruhezustand ein Flag (typisches Flag: $01111110$) gesendet wird.
 \subsubsection{Fehlerbehandlung}
+Weder Fehlerkorrektur noch Fehlererkennung sind Anforderungen an die DLL aber das Versehen von Frames mit Prüfsummen oder das Anwenden mathematischer Faltungen erlaubt es fehlerhaft übertragene Pakete mit einer hohen Warschienlichkeit zu erkennen und erneut zu übertagen. Die nicht erkannten Fehler (Residual Error Ratio RER) werden entweder von den darüberliegenden Schichten erkannt/behoben oder wirken sich als Korruption auf die darunter liegenden Daten aus.
 
 \subsection{Layer 3 - Network Layer}
 \subsection{Layer 4 - Transport Layer}
