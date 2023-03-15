@@ -48,8 +48,31 @@ Mithilfe einer Substitution können wir verschachtelte Funktionen einfacher inte
 \subsection{Mittelwert einer Funktion}
 Der Mittelwert einer Funktion wird immer in Abhängigkeit von 2 Grenzen berechnet. $$\mu= \frac{1}{b-a} \int_{a}^{b} f(x) \mathrm{d}x  $$
 \subsection{Rotationskörper}
+\subsubsection{Volumen}
 Mithilfe eines Integrals kann man das Volumen eines Körpers berechnen, welcher entsteht, wenn man einen Funktionsabschnitt um die X-Achse rotiert.
 Die Formel dazu lautet
 $$V= \pi \int_{a}^{b} f(x)^{2} \mathrm{d}x $$
+\subsubsection{Mantelfläche}
+Die Mantelfläche eines Rotationköpers kann durch die aufsummierte Fläche von Kegelstümpfen approximiert werden.
+\newline
+Notation als Summe:
+$$M =  \lim_{n \to \infty} \pi \cdot \sum_{k=1}^{n} (f(x_k) + f(x_{k+1}) \cdot \sqrt[]{1+\left( \frac{\Delta_{y_k}}{\Delta_{x_k}}^{2} \right)} \cdot \Delta_{x_k}$$
+Notation als Integral:
+$$M = 2\pi \int_{a}^{b} f(x) \cdot \sqrt[]{1+(f'(x))^{2}} \mathrm{d}x $$
+\subsubsection{Schwerpunkt}
+Mithilfe des Volumens kann der Schwerpunkt eines Rotationkörpers ermittelt werden.
+$$x_s = \frac{\pi}{V} \int_{a}^{b} x \cdot f(x)^{2} \mathrm{d}x $$
+\subsection{Bogenlänge einer Kurve}
+Die Bogenlänger einer Kurve kann mithilfe eines Integrals als Summe von infinitesimalen Geraden Strecken approximiert werden.
+$$L = \int_{a}^{b} \sqrt[]{1+(f'(x)}^{2} \mathrm{d}x $$
+\subsection{Ebene Flächen}
+\subsubsection{Schwerpunkt}
+Der Schwerpunkt einer ebenen Fläche die durch zwei Funktionen eingegrenzt wird kann ebenfalls mithilfe von integrieren approximiert werden.
+$$x_s = \frac{1}{A} \int_{a}^{b} x \cdot (f(x)-g(x)) \mathrm{d}x $$
+$$x_s = \frac{1}{2A} \int_{a}^{b} x \cdot (f(x)^{2}-g(x)^{2}) \mathrm{d}x $$
+\subsubsection{Fläche}
+Die Fläche, welche von zwei Funktionen eingeschlossen wird bertägt
+$$A = \int_{a}^{b} ((f(x)-g(x)) \mathrm{d}x $$
+
 
 \end{document}
